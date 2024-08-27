@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 10px;
+}
+
+/*DESKTOP*/
+/* header/menu */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+.logo a {
+  transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
+  color: #7d7d7d;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 200px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo a:hover {
+  opacity: 0.5;
+  color: rgb(255, 0, 221);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 50px;
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
+  text-align: end;
+  font-family: "black ops one";
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.menu a:hover {
+  opacity: 0.5;
+  color: rgb(255, 0, 221);
+}
