@@ -7,7 +7,9 @@ h2 {
   font-weight: bold;
   font-size: 35px;
   letter-spacing: 7px;
-  text-decoration: line-through 1px solid rgb(255, 62, 229);
+  text-decoration-line: line-through;
+  text-decoration-color: rgb(255, 62, 229);
+  text-decoration-thickness: 1px;
 }
 
 /* CSS Grid container til kategorier */
@@ -15,7 +17,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 0; /* Fjern mellemrum mellem celler */
+  gap: 0;
   height: 50vh;
   width: 60vw;
   margin: 50px auto;
@@ -24,7 +26,7 @@ h2 {
 }
 
 .grid-item {
-  border: 1px solid rgb(255, 62, 229); /* Linjer omkring hver celle */
+  border: 1px solid rgb(255, 62, 229);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,4 +70,107 @@ h2 {
 
 .grid-item:nth-child(6) {
   transform: translate(-30px, 0px);
+}
+
+/* PRODUKTLISTE HTML */
+.horizontal-line {
+  height: 1px;
+  background-color: rgb(255, 62, 229);
+  width: 90%;
+  align-items: center;
+  margin: 20px auto;
+}
+
+/* PRODUKTBILLEDER */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  max-width: 800px;
+  margin: 20px auto;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.image-item {
+  text-align: center;
+}
+
+.image-item img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-item h3 a {
+  margin-top: 0px;
+  font-family: "Kanit", sans-serif;
+  font-size: 25px;
+  color: #b3b3b3;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
+}
+
+.image-item h3 a:hover {
+  color: rgb(255, 62, 229);
+}
+
+/* PRODUKT HTML */
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+.grid-item2 img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-item2 h3 {
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
+  color: #b3b3b3;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.grid-item2 p {
+  font-family: "Kanit", sans-serif;
+  font-size: 18px;
+  color: #b3b3b3;
+  line-height: 1.5;
+  max-width: 45ch;
+}
+
+/* Vandret linje mellem billeder og i bunden af siden */
+.horizontal-line {
+  height: 1px;
+  background-color: rgb(255, 62, 229);
+  width: 90%;
+  margin: 20px auto;
+  margin-bottom: 80px;
+}
+
+.line-between-images {
+  height: 1px;
+  background-color: rgb(255, 62, 229);
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* Lodret linje ned igennem hele siden */
+.vertical-line {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  width: 1px;
+  height: 205%;
+  background-color: rgb(255, 62, 229);
 }

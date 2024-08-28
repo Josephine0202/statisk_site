@@ -22,18 +22,19 @@ header {
   font-size: 210px;
 }
 
-.mirror {
-  display: inline-block; /* Sørg for at transform fungerer korrekt */
-  transform: scaleX(-1); /* Spejlvend bogstavet vandret */
-  vertical-align: middle;
-}
-
 .logo {
   text-align: center;
 }
 
 .logo a:hover {
   color: rgb(255, 62, 229);
+}
+
+/* SPEJLVENDT BOGSTAV */
+.mirror {
+  display: inline-block; /* Sørg for at transform fungerer korrekt */
+  transform: scaleX(-1); /* Spejlvend bogstavet vandret */
+  vertical-align: middle;
 }
 
 nav {
