@@ -9,53 +9,49 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="produkt.js">
+    <link rel="stylesheet" href="produktliste.js">
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="style.css">
     <title>Statisk Site</title>
 </head>
 
-<body>
-    <header>
-
+<body class="produktliste">
+    <h1 class="logo"><a href="index.html">FASHION<span class="mirror">R</span>Us</a></h1>
+    <header class="mainNav">
+        <nav class="menu">
+            <a href="kategori.html">CATEGORIES</a>
+            <a href="#">BRANDS</a>
+            <a href="#">SEASONS</a>
+        </nav>
     </header>
 
     <main>
-        <h1 class="logo"><a href="index.html">FASHION<span class="mirror">R</span>Us</a></h1>
-        <div class="horizontal-line"></div>
+        <h2>APPAREL</h2>
+        <!-- Container til produkter -->
+        <div class="liste"></div>
 
-        <h2>PRODUCTS</h2>
-
-        <div class="line-between-images"></div>
-
-        <div class="image-grid">
-            <div class="image-item">
-                <img src="sportsdragt.jpg" alt="Billede 1">
-                <h3><a href="produkt.html">GYMSUIT</a></h3>
-            </div>
-            <div class="image-item">
-                <img src="løbebukser.webp" alt="Billede 2">
-                <h3><a href="produkt.html">TRACKPANTS</a></h3>
-            </div>
-
-            <div class="image-item">
-                <img src="pumabold.jpg" alt="Billede 3">
-                <h3><a href="produkt.html">PUMA BALL</a></h3>
-            </div>
-            <div class="image-item">
-                <img src="pumatrøje.webp" alt="Billede 4">
-                <h3><a href="produkt.html">PUMA T-SHIRT</a></h3>
-            </div>
-        </div>
-
-        <div class="horizontal-line"></div> <!-- Linje i bunden af siden -->
+        <template id="template">
+            <article class="smallProduct">
+                <img class="produkt_billeder" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+                    alt="Sahara Team India Fanwear Round Neck Jersey" />
+                <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+                <p class="subtle">Tshirts Nike</p>
+                <p class="price"><span>Prev.</span> DKK 1595,-</p>
+                <div class="discounted">
+                    <p>Now DKK 1560,-</p>
+                    <p>-34%</p>
+                </div>
+                <a class="se_produkt" href="produkt.html">SE PRODUKT</a>
+            </article>
+        </template>
     </main>
+
+    <script src="produktliste.js"></script>
 
     <footer class="footer">
         MADE BY JOSEPHINE OHLENDORFF
     </footer>
-
-    <div class="vertical-line"></div>
 </body>
 
 </html>

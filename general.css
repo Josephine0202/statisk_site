@@ -8,10 +8,36 @@
 /* header/menu */
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
+  justify-content: center;
+  text-align: center;
   background-color: #ffffff;
+}
+
+nav {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  display: flex;
+  padding: 10px;
+  color: #7d7d7d;
+  text-decoration: none;
+  transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
+  text-decoration: none;
+  font-family: "Kanit", sans-serif;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+.menu a:hover {
+  color: rgb(255, 62, 229);
 }
 
 .logo a {
@@ -35,42 +61,6 @@ header {
   display: inline-block; /* Sørg for at transform fungerer korrekt */
   transform: scaleX(-1); /* Spejlvend bogstavet vandret */
   vertical-align: middle;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
-.menu {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  display: inline;
-}
-
-.menu li:last-child {
-  margin-right: 0;
-}
-
-.menu a {
-  display: block;
-  padding: 50px;
-  color: #b3b3b3;
-  text-decoration: none;
-  transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
-  text-align: end;
-  font-family: "black ops one";
-  font-weight: 600;
-  font-size: 26px;
-}
-
-.menu a:hover {
-  color: rgb(255, 62, 229);
 }
 
 .footer {
